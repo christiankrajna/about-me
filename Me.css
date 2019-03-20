@@ -178,4 +178,121 @@ nav a:hover{
     box-sizing:border-box;
 }
 
+footer{ 
+    clear:both;
+    overflow:none;
+    width:100%;
+    background-color:#0e0e0e;
+    text-align:center;
+    padding:0;
+    margin:0;
+    border-top:#23d3f1 3px solid;
+}
+
+footer p{ 
+    margin:0;
+    padding:25px 0 10px 0;
+    font-weight:800;
+    color:#23d3f1;
+    font-size:12px;
+    text-align:center;
+}
+
+/*           FOOTER             */
+/* imgs, links data-tool-tip   */
+
+.img-linkedin{
+    background-image:url(img/linkedin1.png);
+    background-size:cover;
+    background-position: center;
+    width:40px;
+    height:40px;
+    display:inline-block;
+    left:15px;
+    top:10px;
+}
+
+.img-linkedin:hover{
+    background-image:url(img/linkedin2.png);
+    width:40px;
+    height:40px;
+    opacity:0.9;
+
+}
+
+.img-mailbox{
+    background-image:url(img/mailbox1.png);
+    background-size:cover;
+    background-position: center;
+    width:40px;
+    height:40px;
+    display:inline-block;
+    left:15px;
+    top:10px;
+
+}
+
+.img-mailbox:hover{
+    background-image:url(img/mailbox2.png);
+    width:40px;
+    height:40px;
+    opacity:0.9;
+}
+
+/*  a-data-tooltip  -start */
+
+a[data-tool-tip]{
+    position:relative;
+    justify-content:center;
+    align-items:center;
+}
+
+a[data-tool-tip]::after{
+    content:attr(data-tool-tip);
+    background-color:#242424;
+    color:#f2f2f2;
+    border-radius:5px;
+    font-size:12px;
+    padding:2px 5px 2px 5px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    display:block;
+    white-space:nowrap;
+    transform:scale(0);
+    transition:transform ease-out 250ms,
+                bottom ease-out 250ms,
+                top ease-out 250ms,
+                left ease-out 250ms;
+}
+
+a[data-tool-tip]:hover::after{
+    transform:scale(1);
+    top:-45px;
+    left:40px;
+    bottom:55px;
+}
+
+
+/*  a-data-tooltip  -end */
+
+
+.container-bottom p, .container-bottom h5{
+    color:#ececec;
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+
+.container-bottom{
+overflow:none;
+margin:0;
+padding:10px 0 0 0;
+display:grid;
+grid-template-columns: 1fr 1fr;
+justify-content:center;
+}
+
+
 /*--UNDER CONSTRUCTION--*/
